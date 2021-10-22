@@ -13,6 +13,7 @@ env.config();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(express.static('static'))
 app.use(fileUpload({}));
 app.use("/api", router);
 
